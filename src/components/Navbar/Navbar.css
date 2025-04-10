@@ -1,0 +1,116 @@
+.Navbar {
+  /* padding: 20px 0px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.Navbar .logo {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+.Navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #3e3e3f;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.Navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: #ffffff;
+  border: 2px solid rgb(115, 115, 115);
+  background-color: rgb(252, 77, 47);
+  padding: 7px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Navbar button:hover {
+  background-color: #82e5f9;
+  color: #000;
+}
+.Navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #3e3e3f;
+}
+.mobile-nav-button {
+  font-size: 35px;
+  margin: 5px;
+  padding-top: 8px;
+  display: none;
+}
+@media (max-width: 850px) {
+  .Navbar-menu {
+    gap: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .Navbar .logo {
+    width: 120px;
+  }
+  .Navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 264px) {
+  .Navbar-menu {
+    font-size: 5px;
+  }
+}
+@media (max-width: 650px) {
+  .Navbar-menu {
+    position: static;
+  }
+}
+/* mobile view */
+@media (max-width: 787px) {
+  .mobile-nav-button {
+    display: flex;
+  }
+  .Navbar-menu {
+    display: flex;
+    width: 80%;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 50px;
+    top: 83px;
+    transition: all 0.5s ease-in;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .mobile-nav-button {
+    font-size: 35px;
+  }
+  .Navbar-menu.close {
+    width: 100px;
+    top: -100%;
+    transition: all 0.1s ease-in;
+  }
+}
+@media (max-width: 1000px) {
+  .Navbar-menu {
+    gap: 25px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1050px) {
+  .Navbar .logo {
+    width: 140px;
+  }
+  /* .Navbar-menu {
+    gap: 20px;
+    font-size: 15px;
+  } */
+}

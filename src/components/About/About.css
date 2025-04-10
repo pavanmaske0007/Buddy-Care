@@ -1,0 +1,16 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto; /* centers the div horizontally */
+  padding: 20px;
+}
+
+.about h2 {
+  font-size: 30px;
+  /* font-family: Roboto, sans-serif !important; */
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  /* font-family: Roboto, sans-serif !important; */
+}
