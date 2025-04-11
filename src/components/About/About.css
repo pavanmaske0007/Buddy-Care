@@ -1,16 +1,79 @@
-.about {
-  max-width: 1200px;
-  margin: 0 auto; /* centers the div horizontally */
-  padding: 20px;
+.about-container {
+  padding: 2rem;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
 }
 
-.about h2 {
-  font-size: 30px;
-  /* font-family: Roboto, sans-serif !important; */
+.about-content {
+  /* max-width: 900px; */
+  width: 100%;
+  padding: 1rem;
+  /* background-color: #ffffff; */
+  border-radius: 16px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); */
 }
 
-.about p {
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #464646;
+}
+
+.about-content p {
   font-size: 1rem;
   line-height: 1.6;
-  /* font-family: Roboto, sans-serif !important; */
+  margin-bottom: 1rem;
+}
+
+.offerings h3 {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  color: rgb(252, 77, 47);
+}
+
+.offerings ul {
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.offerings li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.mission {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content {
+    padding: 1rem;
+  }
+
+  .offerings h3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0.75rem;
+  }
+
+  .about-content p,
+  .offerings li {
+    font-size: 0.95rem;
+  }
 }

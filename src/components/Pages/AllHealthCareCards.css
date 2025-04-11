@@ -3,6 +3,25 @@
   max-width: 1200px;
   margin: auto;
   text-align: center;
+  scroll-behavior: smooth;
+}
+
+.allcardscontainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #82e5f9;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  width: 10rem;
+  height: 50px;
+}
+
+.allcardscontainer button:hover {
+  background-color: rgb(252, 77, 47);
+  color: rgb(255, 255, 255);
 }
 
 .allcardscontainer h1 {
@@ -25,6 +44,7 @@
   border: 2px solid rgb(0, 0, 0);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
+  scroll-behavior: smooth;
 }
 
 .Cards:hover {

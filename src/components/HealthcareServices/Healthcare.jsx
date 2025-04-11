@@ -79,7 +79,7 @@ export default function ScrollingCards() {
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = 300; // Adjust scroll speed
+      const scrollAmount = 300;
       if (direction === "left") {
         scrollRef.current.scrollLeft -= scrollAmount;
       } else {

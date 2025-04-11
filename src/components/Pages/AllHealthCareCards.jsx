@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/assets";
+import { useNavigate } from "react-router-dom";
 import "./AllHealthcareCards.css";
 
 const cards = [
@@ -72,6 +73,7 @@ const cards = [
 ];
 
 export default function AllHealthcareCards() {
+  const navigate = useNavigate();
   return (
     <div className="allcardscontainer">
       <h1>All Healthcare Services</h1>
@@ -81,10 +83,10 @@ export default function AllHealthcareCards() {
             <img src={card.img} alt={card.title} />
             <h3>{card.title}</h3>
             <p>{card.text}</p>
-            <button>Read More</button>
           </div>
         ))}
       </div>
+      <button onClick={() => navigate("/")}>Back To Home</button>
     </div>
   );
 }

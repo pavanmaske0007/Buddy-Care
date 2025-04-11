@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Home.css";
 import About from "../About/About";
 import PriceCard from "../Pricecard/PriceCard";
-import HealthCard from "../Healthcard/HealthCard";
+import PriorityCard from "../Prioritycard/PriorityCard";
 import Healthcare from "../HealthcareServices/Healthcare";
 import Download from "../Downlod/Download";
 function Home() {
@@ -10,8 +10,8 @@ function Home() {
   return (
     <div className="home-container">
       <Healthcare />
-      <HealthCard />
       <PriceCard />
+      <PriorityCard />
       <Download />
       <About />
     </div>

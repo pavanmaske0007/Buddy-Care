@@ -4,6 +4,7 @@ import play_store from "./play_store.png";
 import cross_icon from "./cross_icon.png";
 import logout_icon from "./logout_icon.png";
 import parcel_icon from "./parcel_icon.png";
+import Care from "./HS_Care.webp";
 import Aed from "./HS_Aed.webp";
 import Ambulance from "./HS_Ambulance.webp";
 import Brother from "./HS_Brother.webp";
@@ -46,6 +47,7 @@ export const assets = {
   cross_icon,
   logout_icon,
   parcel_icon,
+  Care,
   Aed,
   Ambulance,
   Brother,
