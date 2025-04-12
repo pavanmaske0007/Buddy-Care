@@ -12,7 +12,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+  margin-top: 20px;
   flex-wrap: wrap;
 }
 
@@ -25,7 +26,7 @@
   font-size: 16px;
   /* border: none; */
   background-color: rgb(252, 77, 47);
-  border: 2px solid rgb(115, 115, 115);
+  /* border: 2px solid rgb(115, 115, 115); */
   color: white;
   border-radius: 50px;
   border: none;
@@ -41,7 +42,7 @@
 
 .arrow-button {
   position: absolute;
-  top: 70%;
+  top: 58%;
   transform: translateY(-50%);
   /* background-color: #82e5f9; */
   color: #000000;
@@ -63,36 +64,13 @@
   right: -25px;
 }
 
-/* .arrow {
-  position: absolute;
-  top: 60%;
-  font-size: 30px;
-  cursor: pointer;
-  z-index: 2;
-  color: #000000;
-  background-color: #82e5f9;
-  border: 2px solid rgb(0, 0, 0);
-  margin-left: -3px;
-  padding: 0px 10px;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-} */
-
-/* .arrow.left {
-  left: 5px;
-}
-
-.arrow.right {
-  right: 5px;
-} */
-
 /* Scrollable Row */
 .card-row {
   display: flex;
-  overflow-x: auto;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   gap: 16px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 /* Hide scrollbar */
@@ -107,12 +85,13 @@
 /* Each Card */
 .cardd {
   width: 250px;
+  height: 320px;
   flex: 0 0 auto;
   background-color: #f8f9fa;
   border-radius: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 1, 0.5);
   transition: transform 0.3s;
 }
 
@@ -129,7 +108,8 @@
 .cardd img {
   width: 100%;
   height: 110px;
-  border-radius: 50px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 2px 10px rgba(0.5, 0, 0.8, 0.9);
 }
 
@@ -140,17 +120,35 @@
 }
 
 .cardd p {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  height: 60px;
+  margin: 2px 0;
 }
 
-.priceBox {
-  display: flex;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(252, 77, 47);
+.cardd button {
+  margin: 7px;
+  margin-top: 6px;
+}
+
+.cardd .read-more {
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: #82e5f9;
+  color: #000000;
+}
+
+.cardd .read-more:hover {
+  background-color: rgb(252, 77, 47);
+  color: #ffffff;
+}
+
+.cardd .book-now {
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: #f5fe4c;
+  color: #000000;
 }
 
 /* Responsive adjustments */
@@ -187,9 +185,5 @@
 
   .cardd p {
     font-size: 13px;
-  }
-
-  .priceBox {
-    font-size: 16px;
   }
 }

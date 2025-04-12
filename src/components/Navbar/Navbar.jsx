@@ -1,18 +1,27 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import { FaSearch } from "react-icons/fa";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
+// import Contact from "../Contact/Contact";
+
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("Home");
   const [icon, setIcon] = useState(false);
-  // const handleClick = () => {
-  //   setIcon(!icon);
-  // };
+
   return (
     <div className="Navbar">
-      <Link to="/foodweb">
+      <Link to="/">
         <img src={assets.logo} alt="" className="logo" />
       </Link>
+
+      {/* Search bar */}
+
+      <div className="navbar-search-container">
+        <FaSearch className="navbar-search-icon" />
+        <input type="text" className="navbar-search" placeholder="Search..." />
+      </div>
+
       <ul className={icon ? "Navbar-menu" : "Navbar-menu close"}>
         <Link
           to="/"
@@ -22,22 +31,25 @@ const Navbar = ({ setShowLogin }) => {
           Home
         </Link>
         <Link
-          to="/Tests"
-          onClick={() => setMenu("Tests")}
-          className={menu === "Menu" ? "active" : ""}
+          to="/AboutUs"
+          onClick={() => setMenu("AboutUs")}
+          className={menu === "AboutUs" ? "active" : ""}
         >
-          Tests
+          About Us
         </Link>
         <Link
-          to="/About"
-          onClick={() => setMenu("About")}
+          to="/Contact"
+          onClick={() => {
+            setMenu("Contact");
+          }}
           className={menu === "Contact" ? "active" : ""}
         >
-          About
+          Contact
         </Link>
         <button onClick={() => setShowLogin(true)}>sign in</button>
       </ul>
     </div>
   );
 };
+
 export default Navbar;

@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import Mobile_Image from "./Mobile_Image.webp";
 import app_store from "./app_store.png";
 import play_store from "./play_store.png";
 import cross_icon from "./cross_icon.png";
@@ -43,6 +44,7 @@ import Barber from "./OS_Barber.webp";
 export const assets = {
   logo,
   app_store,
+  Mobile_Image,
   play_store,
   cross_icon,
   logout_icon,

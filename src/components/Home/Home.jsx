@@ -9,9 +9,9 @@ function Home() {
   const [category, setCategory] = useState("All");
   return (
     <div className="home-container">
+      <PriorityCard />
       <Healthcare />
       <PriceCard />
-      <PriorityCard />
       <Download />
       <About />
     </div>

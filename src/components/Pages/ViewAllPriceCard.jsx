@@ -142,6 +142,9 @@ const ViewAll = () => {
   const navigate = useNavigate();
   return (
     <div className="viewallcontainers">
+      <div className="btnn">
+        <button onClick={() => navigate("/")}>Back To Home</button>
+      </div>
       <h1>All Services</h1>
       <div className="gridcontainers">
         {testData.map((item) => (
@@ -152,7 +155,6 @@ const ViewAll = () => {
           </div>
         ))}
       </div>
-      <button onClick={() => navigate("/")}>Back To Home</button>
     </div>
   );
 };

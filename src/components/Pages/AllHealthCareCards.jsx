@@ -76,6 +76,9 @@ export default function AllHealthcareCards() {
   const navigate = useNavigate();
   return (
     <div className="allcardscontainer">
+      <div className="btn">
+        <button onClick={() => navigate("/")}>Back To Home</button>
+      </div>
       <h1>All Healthcare Services</h1>
       <div className="gridcontainer">
         {cards.map((card) => (
@@ -86,7 +89,6 @@ export default function AllHealthcareCards() {
           </div>
         ))}
       </div>
-      <button onClick={() => navigate("/")}>Back To Home</button>
     </div>
   );
 }

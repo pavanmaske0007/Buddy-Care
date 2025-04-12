@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 .container {
   height: 500px;
   width: 500px;
@@ -6,4 +8,5 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Outfit", sans-serif;
 }

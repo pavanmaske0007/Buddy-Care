@@ -3,16 +3,20 @@
   text-align: center;
 }
 .viewallcontainers button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
+  position: fixed;
+  border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
   background-color: #82e5f9;
   color: rgb(0, 0, 0);
-  margin-top: 20px;
-  width: 10rem;
-  height: 50px;
+  margin-top: 5px;
+  width: 7rem;
+  height: 40px;
+}
+
+.btnn {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 79rem;
 }
 
 .viewallcontainers button:hover {
@@ -22,9 +26,9 @@
 
 .gridcontainers {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .gridcards {

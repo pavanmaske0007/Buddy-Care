@@ -65,7 +65,10 @@
   margin-top: 5px;
 }
 .login-popup p span {
-  color: tomato;
+  color: rgb(252, 77, 47);
   font-weight: 900;
   cursor: pointer;
+}
+.login-popup h2 {
+  color: rgb(252, 77, 47);
 }

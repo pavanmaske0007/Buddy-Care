@@ -4,20 +4,6 @@ function About() {
   return (
     <section className="about-container">
       <div className="about-content">
-        <h2>🏥 About Buddy360Care</h2>
-        <p>
-          <strong>Buddy360Care</strong> is a one-stop solution for a wide range
-          of healthcare and essential home services – all delivered right at
-          your doorstep.
-        </p>
-        <p>
-          We understand that <strong>comfort, care, and convenience</strong> are
-          the key needs of today’s families. Whether it’s elderly care,
-          diagnostic tests, doctor visits, or essential home services like AC
-          repair, plumbing, and electrical work – Buddy360Care brings
-          professional, reliable, and timely services directly to your home.
-        </p>
-
         <div className="offerings">
           <h3>💡 What We Offer:</h3>
           <ul>
@@ -39,6 +25,20 @@ function About() {
             </li>
           </ul>
         </div>
+
+        <h2>🏥 About Buddy360Care</h2>
+        <p>
+          <strong>Buddy360Care</strong> is a one-stop solution for a wide range
+          of healthcare and essential home services – all delivered right at
+          your doorstep.
+        </p>
+        <p>
+          We understand that <strong>comfort, care, and convenience</strong> are
+          the key needs of today’s families. Whether it’s elderly care,
+          diagnostic tests, doctor visits, or essential home services like AC
+          repair, plumbing, and electrical work – Buddy360Care brings
+          professional, reliable, and timely services directly to your home.
+        </p>
 
         <p className="mission">
           Our mission is to simplify daily life and healthcare for everyone –

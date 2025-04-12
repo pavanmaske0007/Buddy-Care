@@ -1,12 +1,13 @@
 import React from "react";
 import "./Download.css";
+import { assets } from "../../assets/assets";
 
 const Download = () => {
   return (
     <div className="download-app-container">
       <div className="image-container">
         <img
-          src="https://pathkindwebsiteprod.blob.core.windows.net/websiteprod/assets/img/Mobile-Mockup-v1.png"
+          src={assets.Mobile_Image}
           alt="Mobile App"
           className="mobile-image"
         />
