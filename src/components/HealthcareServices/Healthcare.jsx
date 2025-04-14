@@ -89,10 +89,15 @@ export default function ScrollingCards() {
   };
 
   return (
-    <>
-      <div className="card-hedding">
-        <h1>Healthcare Services</h1>
-        <button onClick={() => navigate("/AllHealthcareCards")}>
+    <div className="Container">
+      <div className="card-heading">
+        <div className="heading-center">
+          <h1>Healthcare Services</h1>
+        </div>
+        <button
+          onClick={() => navigate("/AllHealthcareCards")}
+          className="view-all-btn"
+        >
           View All
         </button>
       </div>
@@ -115,6 +120,6 @@ export default function ScrollingCards() {
           &#10095;
         </span>
       </div>
-    </>
+    </div>
   );
 }

@@ -155,9 +155,6 @@ const PriceCard = () => {
         <h1>Other Services </h1>
         <button onClick={() => navigate("/ViewAllPriceCard")}>View All</button>
       </div>
-      {/* <div className="arrow left" onClick={() => scroll("left")}>
-        &lt;
-      </div> */}
       <span className="arrow-button left" onClick={() => scroll("left")}>
         &#10094;
       </span>
@@ -166,16 +163,12 @@ const PriceCard = () => {
           <div className="cardd" key={test.id}>
             <h2>{test.title}</h2>
             <img src={test.img} alt={test.title} />
-            {/* <h3>{test.subtitle}</h3> */}
             <p>{test.text}</p>
             <button className="read-more">Read More</button>
             <button className="book-now">Book Now</button>
           </div>
         ))}
       </div>
-      {/* <div className="arrow right" onClick={() => scroll("right")}>
-        &gt;
-      </div> */}
       <span className="arrow-button right" onClick={() => scroll("right")}>
         &#10095;
       </span>

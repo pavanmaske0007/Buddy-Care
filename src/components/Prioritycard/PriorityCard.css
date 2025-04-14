@@ -45,15 +45,26 @@
 /* Responsive styling */
 @media (max-width: 768px) {
   .health-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
+    padding: 1.5rem;
   }
 
-  .health-text h1 {
-    font-size: 2rem;
+  .health-text h2 {
+    font-size: 1.75rem;
   }
 
   .health-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .health-text p {
+    font-size: 0.9rem;
   }
 }

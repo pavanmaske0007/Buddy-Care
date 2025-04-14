@@ -3,11 +3,15 @@ import "./Navbar.css";
 import { FaSearch } from "react-icons/fa";
 import { assets } from "../../assets/assets";
 import { Link } from "react-router-dom";
-// import Contact from "../Contact/Contact";
+import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("Home");
   const [icon, setIcon] = useState(false);
+  const handleClick = () => {
+    setIcon(!icon);
+  };
 
   return (
     <div className="Navbar">
@@ -48,6 +52,9 @@ const Navbar = ({ setShowLogin }) => {
         </Link>
         <button onClick={() => setShowLogin(true)}>sign in</button>
       </ul>
+      <div className="mobile-nav-button" onClick={handleClick}>
+        <i>{icon ? <IoMdClose /> : <IoMenu />}</i>
+      </div>
     </div>
   );
 };

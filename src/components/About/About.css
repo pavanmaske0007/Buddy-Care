@@ -15,7 +15,8 @@
 }
 
 .about-content h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   margin-bottom: 1rem;
   color: #000000;
 }
@@ -28,7 +29,8 @@
 
 .offerings h3 {
   margin-top: 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   color: rgb(252, 77, 47);
 }
 
@@ -54,26 +56,34 @@
     padding: 1rem;
   }
 
+  .offerings h3,
   .about-content h2 {
-    font-size: 1.5rem;
-  }
-
-  .about-content {
-    padding: 1rem;
-  }
-
-  .offerings h3 {
-    font-size: 1.125rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-content {
-    padding: 0.75rem;
+    font-size: 1.4rem;
   }
 
   .about-content p,
   .offerings li {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 0.5rem;
+  }
+
+  .offerings h3,
+  .about-content h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .offerings ul {
+    padding-left: 1rem;
+  }
+
+  .mission {
+    font-size: 0.95rem;
+    padding: 0.8rem;
   }
 }

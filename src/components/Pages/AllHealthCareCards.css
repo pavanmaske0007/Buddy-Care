@@ -73,18 +73,39 @@
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
-  .gridcontainer {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .Cards h3 {
+    font-size: 1.1rem;
+  }
+
+  .Cards p {
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .gridcontainer {
     grid-template-columns: 1fr;
   }
 
-  .Cards img {
-    height: 180px;
+  .Cards {
+    padding: 15px;
+  }
+
+  .Cards h3 {
+    font-size: 1rem;
+  }
+
+  .Cards p {
+    font-size: 0.85rem;
   }
 }

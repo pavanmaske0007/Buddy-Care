@@ -13,7 +13,7 @@ const Download = () => {
         />
       </div>
       <div className="content">
-        <h2 className="title">Download the all-new Buddy-Care-360 Labs App</h2>
+        <h2 className="title">Buddy-Care-360 Labs App Coming Soon...</h2>
         <p className="description">
           Download the app to book home collections, search for a specific test,
           <br />

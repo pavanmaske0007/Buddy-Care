@@ -1,13 +1,12 @@
 .Navbar {
-  /* padding: 20px 0px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
 }
 .Navbar .logo {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
 }
 .Navbar-menu {
@@ -54,7 +53,8 @@
   background: transparent;
   font-size: 16px;
   color: #ffffff;
-  border: 2px solid rgb(115, 115, 115);
+  /* border: 2px solid rgb(115, 115, 115); */
+  border: none;
   background-color: rgb(252, 77, 47);
   padding: 7px 12px;
   border-radius: 50px;
@@ -75,6 +75,7 @@
   padding-top: 8px;
   display: none;
 }
+
 @media (max-width: 850px) {
   .Navbar-menu {
     gap: 10px;
@@ -87,6 +88,9 @@
   .Navbar-menu {
     gap: 15px;
     font-size: 16px;
+  }
+  .navbar-search-container {
+    display: none;
   }
 }
 @media (max-width: 264px) {
@@ -104,34 +108,32 @@
   .mobile-nav-button {
     display: flex;
   }
+  .navbar {
+    padding-left: 2rem;
+  }
 
   /* search icon */
 
   @media (max-width: 787px) {
     .Navbar {
-      flex-direction: column;
-      align-items: flex-start;
       padding: 10px;
+      margin-bottom: 10px;
     }
-
     .navbar-search {
       width: 90%;
       margin: 10px 0;
       font-size: 14px;
     }
-
-    .Navbar-menu {
-      align-items: flex-start;
-    }
   }
   .Navbar-menu {
     display: flex;
-    width: 80%;
+    width: 78%;
     position: absolute;
-    background-color: #ffffff;
-    padding: 50px;
-    top: 83px;
-    transition: all 0.5s ease-in;
+    background-color: rgb(255, 144, 124);
+    border-radius: 20px;
+    padding: 8px;
+    top: 110px;
+    transition: all 0.6s ease-in;
   }
   ul {
     display: flex;
@@ -145,17 +147,25 @@
   .Navbar-menu.close {
     width: 100px;
     top: -100%;
-    transition: all 0.1s ease-in;
+    transition: all 0.6s ease-in;
   }
 }
 @media (max-width: 1000px) {
   .Navbar-menu {
-    gap: 25px;
+    gap: 20px;
     font-size: 15px;
+  }
+  .navbar-search-container {
+    display: none;
   }
 }
 @media (max-width: 1050px) {
   .Navbar .logo {
     width: 140px;
+  }
+}
+@media (max-width: 1144px) {
+  .navbar-search {
+    display: none;
   }
 }

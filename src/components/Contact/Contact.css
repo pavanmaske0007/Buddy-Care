@@ -27,3 +27,19 @@
 .contact-popup p {
   margin: 0.5rem 0;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+  .contact-popup {
+    padding: 1.5rem;
+  }
+
+  .contact-popup h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-popup p {
+    font-size: 0.95rem;
+  }
+}
